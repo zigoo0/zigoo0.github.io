@@ -1,0 +1,181 @@
+/* General
+================================================== */
+img{ max-width: 100%; }
+
+/*hide responsive menus*/
+#topbar .selector,
+#navigation .selector { display: none; }
+
+
+/* Apply To All Responsive Layouts
+================================================== */
+@media only screen and (max-width: 1159px) {
+	
+	/*hide stuff*/
+	/*.flex-direction-nav{ display: none }*/
+	.flexslider-container .flex-caption{ margin-top: 50px; }
+	#related-posts .read-more{ display: none }
+	
+	/*responsive top menu*/
+	#topbar .selector option{ background:#000; -webkit-appearance:none; padding: 10px; border-bottom: 1px solid #333; color: #fff }
+	#topbar .selector, 
+	#topbar .selector span{ cursor: pointer !important; -webkit-font-smoothing:antialiased }
+	#topbar .selector, 
+	#topbar .selector *{ margin:0; padding:0 }
+	#topbar .selector select{ top:0px; left:0px; }
+	#topbar .selector{ width: 100%; text-indent: -9999px; }
+	#topbar .selector{ background: #222 url("/web/20200225074602im_/https://www.sec-down.com/wordpress/wp-content/themes/supportpress/images/top-responsive-nav.png") no-repeat center center; height: 45px; width: 45px; display:-moz-inline-box; display:inline-block; vertical-align:middle; zoom:1; *display:inline; cursor: pointer !important; position:relative; overflow:hidden; color: #fff }
+	#topbar .selector select:focus{outline:0; }
+	#topbar .selector span{ display:block; overflow:hidden; text-overflow:ellipsis;  white-space:nowrap }
+	#topbar .selector select{ position:absolute; height:45px; background:none; width:200px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;  font-size:12px;  font-weight:500;  border:0 !important }
+	
+	/*navigation top menu*/
+	#navigation .selector option{ background:#f5f5f5; -webkit-appearance:none; padding: 10px; border-bottom: 1px solid #ececec }
+	#navigation .selector, 
+	#navigation .selector span{ cursor: pointer !important; -webkit-font-smoothing:antialiased }
+	#navigation .selector, 
+	#navigation .selector *{ margin:0; padding:0 }
+	#navigation .selector select{ top:0px; left:0px; height: 60px }
+	#navigation .selector{ width: 100%; color: #fff; font-weight: bold; line-height: 60px; text-indent: 20px }
+	#navigation .selector{ height: 60px; width: 60px; width: 100%; display:-moz-inline-box; display:inline-block; vertical-align:middle; zoom:1; *display:inline; cursor: pointer !important; position:relative; overflow:hidden; background: url("/web/20200225074602im_/https://www.sec-down.com/wordpress/wp-content/themes/supportpress/images/responsive-drop-arrow.png") right center no-repeat }
+	#navigation .selector select:focus{outline:0; }
+	#navigation .selector span{ display:block; overflow:hidden;  text-overflow:ellipsis;  white-space:nowrap }
+	#navigation .selector select{ position:absolute; height:60px; background:none; width:100%; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px; font-weight:500; border:0 !important }
+
+		
+	/*display dropdown nav*/
+	#topbar .selector,
+	#navigation .selector { display: inline-block; }
+	#topbar ul.top-menu-nav,
+	#navigation ul { display: none; }
+}
+
+
+
+/* #Tablet (Portrait) = Design for a width of 730px
+================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	/*blog*/
+	.post-img { float: left; }
+	.post-content { float: left; margin-top: 20px; }
+	
+
+
+}
+
+
+
+/* Mobile (Portrait) = Design for a width of 280px
+================================================== */
+
+@media only screen and (max-width: 767px) {
+
+	/*hide stuff*/
+	.flexslider-container .flex-caption,
+	#services-sidebar{ width: 66%;
+font-size: 10px;
+padding: 7px;
+margin-top: 50px; }
+
+.flexslider-container .flex-caption h2, .flexslider-container .flex-caption h3 { font-size: 17px;
+padding: 10px; }
+
+.flexslider-container .flex-caption a {display: none;}
+.flexslider-container .flex-caption span {display:none;}
+	
+	/*main*/
+	#post { width: 100% }
+
+	#template-docs-section-right { width:100%; }
+	
+	
+	/*header*/
+	#logo{ margin: 0 !important }
+	#logo img{ margin: 15px 0 }
+	#header-right{ display: none }
+	
+	/*you can enable the right header by uncommenting this
+	#header-right{ position: inherit; text-align: center; margin: 10px auto !important; float: none }
+	*/
+	
+	/*slider*/
+	.flex-direction-nav li a.flex-next, .flex-direction-nav li a.flex-prev { width: 20px; height: 34px; line-height: 34px; margin-top: -12px; font-size: 11px}
+	
+	/*titles*/
+	#page-heading h1, #page-heading h2{ width: 100% }
+	#post-navigation{ position: inherit; text-align: center; margin-top: 10px; margin-left: 20px }
+	
+	/*blog*/
+	.post-img { float: none; width: 100% }
+	.post-content { float: none; width: 100%; margin-top: 20px; margin-left: 0 }
+	#related-posts .alignleft{ max-width: 30% }
+	.related-entry-excerpt{ display: none }
+	
+	/*services*/
+	#template-services-section-left, #template-services-section-right{ width: 100% }
+	#template-services-section-left{ margin-bottom: 10px }
+	
+	/*staff*/
+	#staff-post-thumbnail{ width: 100%; margin-bottom: 20px }
+	
+	/*footer*/
+	#footer-header #footer-header-text,
+	#footer-header #footer-header-btn{ width: 100%; float: none }
+	#footer-header #footer-header-btn{ margin-top: 20px }
+	#footer-header #footer-header-btn .button{ float: none }
+	#footer-bottom, #footer-menu{ text-align: center }
+	#footer-menu{ margin-top: 5px }
+	
+	/*other*/
+	#404-page-title{ font-size: 80px; line-height: 80px; margin-bottom: 25px; }
+	#404-page-text{ margin-top: 0 }
+	
+	/*comments*/
+	.children { margin: 30px 0 0; }
+	.children li.depth-2,
+	.children li.depth-3,
+	.children li.depth-4,
+	.children li.depth-5,
+	.children li.depth-6,
+	.children li.depth-7,
+	.children li.depth-8,
+	.children li.depth-9,
+	.children li.depth-10 { margin: 0 }
+       
+}
+
+
+/* Mobile (Landscape) = Design for a width of 440px
+================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	/*slider*/
+	.flex-direction-nav li a.flex-next, .flex-direction-nav li a.flex-prev { width: 30px; height: 44px; line-height: 44px; margin-top: -22px; font-size: 12px }
+
+	
+	/*blog*/
+	.related-entry-excerpt{ display: block }
+		
+}
+/*
+     FILE ARCHIVED ON 07:46:02 Feb 25, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:43:27 Jan 20, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 138.778 (3)
+  RedisCDXSource: 2.08
+  exclusion.robots.policy: 0.195
+  esindex: 0.018
+  exclusion.robots: 0.211
+  PetaboxLoader3.datanode: 117.26 (4)
+  captures_list: 171.022
+  load_resource: 70.478
+  CDXLines.iter: 25.786 (3)
+  PetaboxLoader3.resolve: 28.189
+*/

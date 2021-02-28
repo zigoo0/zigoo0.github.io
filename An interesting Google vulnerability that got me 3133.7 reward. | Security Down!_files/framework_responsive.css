@@ -1,0 +1,159 @@
+/*----------------------------------------------------
+
+	* Responsive CSS
+	
+/*------------------------------------------------- */
+
+
+/* Apply To All Responsive Layouts
+================================================== */
+@media only screen and (max-width: 1159px) { }
+
+
+/* #Tablet (Portrait) = Design for a width of 730px
+================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1159px) {
+
+	#right-header { display: none; }
+	#header-right { display: none; }
+
+	/*grid*/
+	.outer-container{ width: 730px; }
+	.grid-1{ width: 680px; }
+	.grid-2{ width: 330px; }
+	.grid-3{ width: 214px; margin-right: 19px; margin-bottom: 19px; }
+	.grid-4{ width: 155px; }
+	.grid-5{ width: 120px; }
+	.grid-6{ width: 100px; margin-right: 16px; margin-bottom: 16px; }
+	
+	#post .grid-1{ width: 450px }
+	#post .grid-2{ width: 215px }
+	#post .grid-3{ width: 138px; margin-right: 19px; margin-bottom: 19px }
+	#post .grid-4{ width: 99px; margin-right: 18px; margin-bottom: 18px }
+	#post .grid-5{ width: 74px }
+	#post .grid-6{ width: 65px; margin-right: 12px; margin-bottom: 12px }
+
+	/*main*/
+	#post{ width: 450px }
+	#sidebar{ width: 205px }
+
+	#home-blog-staff img {width: 36px !important;height: 36px !important;}
+
+	/*move the user/login info to the top menu */
+	#responsive-login {display:inline-block;margin-top: -25px; height: 47px;}	
+	#responsive-login img{ float: right;height: 47px;margin-left: 15px; }
+	#responsive-login a { padding-top:12px; }
+
+	#template-docs-section-left {width:260px !important;}
+	#template-docs-section-right { width:420px !important; }
+
+	
+}
+
+/* Mobile (Portrait) = Design for a width of 280px
+================================================== */
+
+@media only screen and (max-width: 767px) {
+	
+	/*grid*/
+	.outer-container{ width: 280px; }
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, #post .grid-1, #post .grid-2, #post .grid-3, #post .grid-4, #post .grid-5, #post .grid-6{ width: 230px; }
+
+	#header #social{ display:none; }
+	#right-header { display: none; }
+	#header-right { display: none; }
+	
+	/*main*/
+	#post{ width: 100%; }
+	#sidebar{ width: 100%; }
+	#home-wrap { width:100% !important;}
+	
+	/*shortcodes*/
+	.one-half,
+	.one-third,
+	.one-fourth,
+	.one-fifth,
+	.one-sixth,
+	.one-two-third,
+	.one-three-fourths { width: 100%; margin: 0 0 25px; }
+	
+	.alert-red.alignright,
+	.alert-yellow.alignright,
+	.alert-green.alignright,
+	.alert-blue.alignright,
+	.alert-red.alignleft,
+	.alert-yellow.alignleft,
+	.alert-green.alignleft,
+	.alert-blue.alignleft { width: 100%; margin: 25px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	
+	/*other*/
+	#404-page-title{ font-size: 80px; line-height: 80px; margin-bottom: 25px; }
+	#404-page-text{ margin-top: 0; }
+
+	/*move the user/login info to the top menu */
+	#responsive-login {display:inline-block;margin-top: -25px; height: 47px;}	
+	#responsive-login img{ float: right;height: 47px;margin-left: 15px; }
+	#responsive-login a { padding-top:12px; }
+	
+	/*comments*/
+	.children { margin: 30px 0 0; }
+	.children li.depth-2,
+	.children li.depth-3,
+	.children li.depth-4,
+	.children li.depth-5,
+	.children li.depth-6,
+	.children li.depth-7,
+	.children li.depth-8,
+	.children li.depth-9,
+	.children li.depth-10 { margin: 0 }
+
+	#home-blog-staff img {width: 61px !important;height: 61px !important;}
+	#home-blog-staff-header {display:none !important;}
+	#home-blog-staff-header-sub {display: inline !important;}
+       
+}
+
+
+/* Mobile (Landscape) = Design for a width of 440px
+================================================== */
+
+/* Note: Design for a width of 440px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	/*grid*/
+	.outer-container{ width: 440px; }
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, #post .grid-1, #post .grid-2, #post .grid-3, #post .grid-4, #post .grid-5, #post .grid-6{ width: 390px; }
+
+	/*move the user/login info to the top menu */
+	#responsive-login {display:inline-block;margin-top: -25px; height: 47px;}	
+	#responsive-login img{ float: right;height: 47px;margin-left: 15px; }
+	#responsive-login a { padding-top:12px; }
+	
+	#header #social{ display:none; }
+	#right-header { display: none; }
+	#header-right { display: none; }
+	
+	
+}
+/*
+     FILE ARCHIVED ON 07:46:02 Feb 25, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:38:15 Jan 20, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.datanode: 280.555 (4)
+  LoadShardBlock: 62.318 (3)
+  RedisCDXSource: 3.843
+  captures_list: 96.677
+  exclusion.robots: 0.195
+  esindex: 0.016
+  load_resource: 381.214
+  PetaboxLoader3.resolve: 154.144
+  exclusion.robots.policy: 0.181
+  CDXLines.iter: 26.402 (3)
+*/
